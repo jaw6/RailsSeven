@@ -3,7 +3,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  # toggle the two lines below and see what happens to show.html.erb line 4-5
   scope "(:locale)" do
+  # scope "(:locale)", defaults: { locale: nil } do 
     get 'whatever/show'
   end
 end
